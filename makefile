@@ -8,7 +8,7 @@ PUSH_DIR=$(shell basename `pwd`)
 
 all:  post-build
 
-init: 
+init:	chmod u+x init.sh
 	./init.sh
 
 build: init
